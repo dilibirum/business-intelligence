@@ -1,0 +1,36 @@
+### Linux ###
+*~
+~*
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+
+###Settings & Configs###
+/configs
+/settings
+/mvp/configs
+/mvp/tests
+
+### PyCharm ###
+.idea
+/out/
+
+# User-specific stuff:
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+# Django stuff:
+*.log
+local_settings.py
