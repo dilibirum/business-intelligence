@@ -15,7 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.urls import include
+from app.tests import interface_test as it
+from .views import landing_page
 
 urlpatterns = [
+    path('', landing_page),  # главная страница
+    path('app/', include('app.urls')),
     path('admin/', admin.site.urls),
+    path('test/', it),
 ]

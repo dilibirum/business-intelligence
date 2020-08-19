@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 with open(BASE_DIR + os.sep + 'configs' + os.sep + 'keys.yaml') as f:
     config = yaml.load(f, Loader=yaml.FullLoader)
-    KEY = config['django']
+    KEY = config['DJANGO_SECRET_KEY']
 
 SECRET_KEY = KEY
 
