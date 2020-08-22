@@ -1,0 +1,38 @@
+.main_img {
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.main_banner {
+    color: #CADBEB!important;
+}
+
+.main_title {
+    position: absolute;
+    top: 40%;
+    left: 14vw;
+
+}
+
+.btn-main {
+    color: #CADBEB !important;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    font-size: 0.7em;
+}
+
+.main-screen {
+    background-color: #343A40;
+    height: 100%;
+    position: fixed;
+}
+
+h1 {
+    color: #CADBEB!important;
+    font-weight: bold;
+}
+
+.navbar-main {
+    background-color: #151E20!important;
+}

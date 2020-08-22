@@ -1,8 +1,53 @@
-{% extends 'mvp/base.html' %}
-        {% block title %}Платформа интеллектуальной аналитики – извлекаем выгоду из хаоса{% endblock %}
+{% load static %}
+<!DOCTYPE html>
+<html xml:lang="ru" lang="ru">
+<link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous">
+<link href="{% static 'css/landing_page.css' %}" rel="stylesheet" type="text/css" />
 
-        <div>{% block content %}
-            <h1>Здесь будет лендинг о продукте</h1>
-            <p>Из шаблона</p>
-            <div>Текущее время: {{ now }}</div>
-        {% endblock %}</div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ei=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="keywords" content="Business intelligence, Data Modeling, Statistics, Data Analytics,
+        Big Data, Artificial Intelligence, Data Wrangling, Machine Learning, Data Visualization, ETL system,
+        BI platform, software, explanatory data analysis, statistical data analysis, business analysis,
+        predictive analysis, интеллектуальная аналитика, математическое моделирование, статистика, анализ данных,
+        большие данные, искусственный интеллект, управление данными, машинное обучение, визуализация данных,
+        ETL-система, BI-платформа, платформа интеллектуальной аналитики, программное обеспечение,
+        исследовательский анализ данных, статистический анализ данных, анализ бизнес-показателей,
+        предиктивный анализ">
+        <meta name="description" content="Платформа интеллектуальной аналитики – специализированное программное
+        обеспечение для решения аналитических задач">
+
+        <title>Платформа интеллектуальной аналитики – объективный взгляд на свой бизнес</title>
+    </head>
+
+    <body>
+
+        <div class="cover-container d-flex w-100 h-100 mx-auto flex-column main-screen">
+
+            <header>
+                {% block header %}
+                    {% include 'mvp/includes/base-header.html' %}
+                {% endblock %}
+            </header>
+
+            <main role="main" class="inner cover">
+                {% block content %}
+                    {% include 'mvp/includes/base-content.html' %}
+                {% endblock %}
+            </main>
+
+            <footer>
+                {% block footer %}
+                    {% include 'mvp/includes/base-footer.html' %}
+                {% endblock %}
+            </footer>
+        </div>
+    </body>
+
+</html>
